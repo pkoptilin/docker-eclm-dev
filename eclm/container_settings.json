@@ -1,0 +1,13 @@
+{
+  "_comment" : "FOR DETAILED FORMAT LOOK AT https://docs.docker.com/reference/api/docker_remote_api_v1.16/#create-a-container",
+  "HostConfig": {
+    "Links": ["oracle:oracle"],
+    "PortBindings":{
+      "8080/tcp": [{ "HostIp": "0.0.0.0", "HostPort": "8080" }],
+      "9990/tcp": [{ "HostIp": "0.0.0.0", "HostPort": "9990" }],
+      "8787/tcp": [{ "HostIp": "0.0.0.0", "HostPort": "8787" }]
+
+
+    }
+  }
+}
